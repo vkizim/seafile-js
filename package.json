@@ -6,11 +6,12 @@
   "dependencies": {
     "@babel/polyfill": "7.12.1",
     "axios": "0.21.1",
+    "dotenv": "^16.0.1",
     "form-data": "4.0.0"
   },
   "scripts": {
     "test": "jest --env=node --colors --coverage",
-    "build": "node_modules/.bin/babel src --out-dir lib",
+    "build": ".\\node_modules\\.bin\\babel.cmd src --out-dir lib",
     "prepublishOnly": "npm run build"
   },
   "jest": {},
